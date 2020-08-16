@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'foundation-sites/dist/css/foundation.min.css';
+import 'foundation-sites/dist/js/foundation.min';
+import 'foundation-sites/dist/js/plugins/foundation.dropdownMenu.min';
+import 'foundation-sites/dist/js/plugins/foundation.core.min';
+
 
 ReactDOM.render(
   <React.StrictMode>
