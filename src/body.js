@@ -1,5 +1,11 @@
 import React from 'react';
 import Table_car from './table_car.js';
+import {
+BrowserRouter as Router,
+Switch,
+Route,
+Link
+}from "react-router-dom";
 
 class Body extends React.Component {
 	constructor(props){
@@ -8,7 +14,7 @@ class Body extends React.Component {
 
 	render(){
 		
-		const car_list = [
+		const car_list_bmw = [
 			{model: "Старый седан", img: "../images/mark/BMW/3.jpg"},
 			{model: "X3", img: "../images/mark/BMW/2.jpg"},
 			{model: "Внедорожник", img: "../images/mark/BMW/1.jpg"},
@@ -16,31 +22,91 @@ class Body extends React.Component {
 			
 		]
 		
+		
+		const car_list_ford = [
+			{model: "Mustang", img: "../images/mark/ford/Mustang.jpg"},
+			{model: "miniwen", img: "../images/mark/ford/miniwen.jpg"},
+			{model: "mondeno", img: "../images/mark/ford/mondeno.jpg"},
+			{model: "ranger", img: "../images/mark/ford/ranger.jpg"},
+			
+		]
+		
+		
+		const car_list_vaz = [
+			{model: "Грузовой Ваз", img: "../images/mark/ВАЗ/Грузовой_Ваз.jpg"},
+			{model: "Классический Ваз", img: "../images/mark/ВАЗ/Классический_Ваз.jpg"},
+			{model: "Постапокалептический Ваз", img: "../images/mark/ВАЗ/Постапокалептический_Ваз.jpg"},
+			{model: "Сверх кастомный Ваз", img: "../images/mark/ВАЗ/Сверх_кастомный_Ваз.jpg"},
+			
+		]
+		
+		const car_list_toyota = [
+			{model: "camry", img: "../images/mark/toyota/camry.jpg"},
+			{model: "supra", img: "../images/mark/toyota/supra.jpg"},
+			{model: "land cruiser", img: "../images/mark/toyota/land_cruiser.jpg"},
+			{model: "prototipe", img: "../images/mark/toyota/prototipe.jpg"},
+			
+		]
+		
+		
+		const car_list_mercedes = [
+			{model: "electro car", img: "../images/mark/mercedes/electro_car.jpg"},
+			{model: "light car", img: "../images/mark/mercedes/light_car.jpg"},
+			{model: "supper car", img: "../images/mark/mercedes/supper_car.jpg"},
+			{model: "Как это сюда попало?", img: "../images/mark/mercedes/kak_eto_suda_popalo.jpg"},
+			
+		]
+		
 		return(
 		<div className="grid-x grid-padding-x">
-            <div className="cell medium-3 large-3 text-left">
+            
+			<Router>
+			<div className="cell medium-3 large-3 text-left">
 				<ul>
 					<li>
-						<a href ="">BMW</a>
+						<Link to="/mark/bmw">BMW</Link>
 					</li>
 					<li>
-						<a href ="">Mercedes</a>
+						<Link to="/mark/mercedes">Mercedes</Link>
 					</li>
 					<li>
-						<a href ="">Ford</a>
+						<Link to="/mark/ford">Ford</Link>
 					</li>
 					<li>
-						<a href ="">Ваз</a>
+						<Link to="/mark/vaz">Ваз</Link>
 					</li>
 					<li>
-						<a href ="">Toyota</a>
+						<Link to="/mark/toyota">Toyota</Link>
 					</li>
 				</ul>
-			</div>
+				</div>
+				
+				<div className="cell medium-8 large-8">
+				
+				<Switch>
+					<Route path='/mark/bmw'>
+						<Table_car mark="BMWs" cars={car_list_bmw} />
+					</Route>
+					<Route path='/mark/ford'>
+						<Table_car mark="Ford" cars={car_list_ford} />
+					</Route>
+					<Route path='/mark/mercedes'>
+					<Table_car mark="Mercedes" cars={car_list_mercedes} />
+					</Route>
+					<Route path='/mark/toyota'>
+					<Table_car mark="Toyota" cars={car_list_toyota} />
+					</Route>
+					<Route path='/mark/vaz'>
+					<Table_car mark="Ваз" cars={car_list_vaz} />
+					</Route>
+				</Switch>
+				  </div>
+				</Router>
 			
-			<div className="cell medium-8 large-8">
-           <Table_car mark="BMWs" cars={car_list} />
-        </div>
+			
+			
+			{/*<Table_car mark="BMWs" cars={car_list} />*/}
+      
 			
 		</div>
 		);
