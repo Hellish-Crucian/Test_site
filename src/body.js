@@ -57,6 +57,22 @@ class Body extends React.Component {
 			
 		]
 		
+		const car_list_BUHANKA = [
+			{model: "КЛАССИЧЕСКАЯ БУХАНКА", img: "../images/mark/БУХАНКА/КЛАССИЧЕСКАЯ_БУХАНКА.jpg"},
+			{model: "ГРУЗОВАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГРУЗОВАЯ_БУХАНКА.jpg"},
+			{model: "СКОРАЯ БУХАНКА", img: "../images/mark/БУХАНКА/СКОРАЯ_БУХАНКА.jpg"},
+			{model: "БУХАНКА ДЖИП", img: "../images/mark/БУХАНКА/БУХАНКА_ДЖИП.jpg"},
+			{model: "ВЕЗДЕХОДНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВЕЗДЕХОДНАЯ_БУХАНКА.jpg"},
+			{model: "БУХАНКА - МОНСТР ТРАК", img: "../images/mark/БУХАНКА/БУХАНКА_МОНСТР_ТРАК.jpg"},
+			{model: "ЭЛИТНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ЭЛИТНАЯ_БУХАНКА.jpg"},
+			{model: "БРОНИРОВАННАЯ БУХАНКА", img: "../images/mark/БУХАНКА/БРОНИРОВАННАЯ_БУХАНКА.jpg"},
+			{model: "БУХАНКА ИЗ БУДУЩЕГО", img: "../images/mark/БУХАНКА/БУХАНКА_ИЗ_БУДУЩЕГО.jpg"},
+			{model: "ГУСЕНИЧНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГУСЕНИЧНАЯ_БУХАНКА.jpg"},
+			{model: "ВОЗДУШНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВОЗДУШНАЯ_БУХАНКА.jpg"},
+			{model: "БУХАНКА - ЛИМУЗИН", img: "../images/mark/БУХАНКА/БУХАНКА_ЛИМУЗИН.jpg"},
+		]
+			
+		
 		return(
 		<div className="grid-x grid-padding-x">
             
@@ -78,6 +94,9 @@ class Body extends React.Component {
 					<li>
 						<Link to="/mark/toyota">Toyota</Link>
 					</li>
+					<li>
+						<Link to="/mark/БУХАНКА">...</Link>
+					</li>
 				</ul>
 				</div>
 				
@@ -98,6 +117,9 @@ class Body extends React.Component {
 					</Route>
 					<Route path='/mark/vaz'>
 					<Table_car mark="Ваз" cars={car_list_vaz} />
+					</Route>
+					<Route path='/mark/БУХАНКА'>
+					<Table_car mark="БУХАНКА" cars={car_list_BUHANKA} />
 					</Route>
 				</Switch>
 				  </div>
