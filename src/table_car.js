@@ -9,7 +9,7 @@ class Table_car extends React.Component {
 		
 		const cars = this.props.cars.map((car) =>
 			<div className="cell small-12 medium-6 large-4">
-				<Card_car model={car.model} img={car.img} />
+				<Card_car model={car.model} img={car.img} prise={car.prise} />
 			</div>
 		)
 		
