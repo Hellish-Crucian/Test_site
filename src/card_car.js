@@ -12,6 +12,7 @@ class Card_car extends React.Component {
 				<img src={this.props.img} />
 					<div className="card-section">
 						<p>{this.props.model}</p>
+						<b>{this.props.prise}</b>
 					</div>
 			</div>
 		);

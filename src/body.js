@@ -15,61 +15,61 @@ class Body extends React.Component {
 	render(){
 		
 		const car_list_bmw = [
-			{model: "Старый седан", img: "../images/mark/BMW/3.jpg"},
+			{model: "Старый седан", img: "../images/mark/BMW/3.jpg", prise:"цена = "},
 			{model: "X3", img: "../images/mark/BMW/2.jpg"},
-			{model: "Внедорожник", img: "../images/mark/BMW/1.jpg"},
-			{model: "Новая машина", img: "../images/mark/BMW/4.jpg"},
+			{model: "Внедорожник", img: "../images/mark/BMW/1.jpg", prise:"цена = "},
+			{model: "Новая машина", img: "../images/mark/BMW/4.jpg", prise:"цена = "},
 			
 		]
 		
 		
 		const car_list_ford = [
-			{model: "Mustang", img: "../images/mark/ford/Mustang.jpg"},
-			{model: "miniwen", img: "../images/mark/ford/miniwen.jpg"},
-			{model: "mondeno", img: "../images/mark/ford/mondeno.jpg"},
-			{model: "ranger", img: "../images/mark/ford/ranger.jpg"},
+			{model: "Mustang", img: "../images/mark/ford/Mustang.jpg", prise:"цена = "},
+			{model: "miniwen", img: "../images/mark/ford/miniwen.jpg", prise:"цена = "},
+			{model: "mondeno", img: "../images/mark/ford/mondeno.jpg", prise:"цена = "},
+			{model: "ranger", img: "../images/mark/ford/ranger.jpg", prise:"цена = "},
 			
 		]
 		
 		
 		const car_list_vaz = [
-			{model: "Грузовой Ваз", img: "../images/mark/ВАЗ/Грузовой_Ваз.jpg"},
-			{model: "Классический Ваз", img: "../images/mark/ВАЗ/Классический_Ваз.jpg"},
-			{model: "Постапокалептический Ваз", img: "../images/mark/ВАЗ/Постапокалептический_Ваз.jpg"},
-			{model: "Сверх кастомный Ваз", img: "../images/mark/ВАЗ/Сверх_кастомный_Ваз.jpg"},
+			{model: "Грузовой Ваз", img: "../images/mark/ВАЗ/Грузовой_Ваз.jpg", prise:"цена = "},
+			{model: "Классический Ваз", img: "../images/mark/ВАЗ/Классический_Ваз.jpg", prise:"цена = "},
+			{model: "Постапокалептический Ваз", img: "../images/mark/ВАЗ/Постапокалептический_Ваз.jpg", prise:"цена = "},
+			{model: "Сверх кастомный Ваз", img: "../images/mark/ВАЗ/Сверх_кастомный_Ваз.jpg", prise:"цена = "},
 			
 		]
 		
 		const car_list_toyota = [
-			{model: "camry", img: "../images/mark/toyota/camry.jpg"},
-			{model: "supra", img: "../images/mark/toyota/supra.jpg"},
-			{model: "land cruiser", img: "../images/mark/toyota/land_cruiser.jpg"},
-			{model: "prototipe", img: "../images/mark/toyota/prototipe.jpg"},
+			{model: "camry", img: "../images/mark/toyota/camry.jpg", prise:"цена = "},
+			{model: "supra", img: "../images/mark/toyota/supra.jpg", prise:"цена = "},
+			{model: "land cruiser", img: "../images/mark/toyota/land_cruiser.jpg", prise:"цена = "},
+			{model: "prototipe", img: "../images/mark/toyota/prototipe.jpg", prise:"цена = "},
 			
 		]
 		
 		
 		const car_list_mercedes = [
-			{model: "electro car", img: "../images/mark/mercedes/electro_car.jpg"},
-			{model: "light car", img: "../images/mark/mercedes/light_car.jpg"},
-			{model: "supper car", img: "../images/mark/mercedes/supper_car.jpg"},
-			{model: "Как это сюда попало?", img: "../images/mark/mercedes/kak_eto_suda_popalo.jpg"},
+			{model: "electro car", img: "../images/mark/mercedes/electro_car.jpg", prise:"цена = "},
+			{model: "light car", img: "../images/mark/mercedes/light_car.jpg", prise:"цена = "},
+			{model: "supper car", img: "../images/mark/mercedes/supper_car.jpg", prise:"цена = "},
+			{model: "Как это сюда попало?", img: "../images/mark/mercedes/kak_eto_suda_popalo.jpg", prise:"цена = "},
 			
 		]
 		
 		const car_list_BUHANKA = [
-			{model: "КЛАССИЧЕСКАЯ БУХАНКА", img: "../images/mark/БУХАНКА/КЛАССИЧЕСКАЯ_БУХАНКА.jpg"},
-			{model: "ГРУЗОВАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГРУЗОВАЯ_БУХАНКА.jpg"},
-			{model: "СКОРАЯ БУХАНКА", img: "../images/mark/БУХАНКА/СКОРАЯ_БУХАНКА.jpg"},
-			{model: "БУХАНКА ДЖИП", img: "../images/mark/БУХАНКА/БУХАНКА_ДЖИП.jpg"},
-			{model: "ВЕЗДЕХОДНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВЕЗДЕХОДНАЯ_БУХАНКА.jpg"},
-			{model: "БУХАНКА - МОНСТР ТРАК", img: "../images/mark/БУХАНКА/БУХАНКА_МОНСТР_ТРАК.jpg"},
-			{model: "ЭЛИТНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ЭЛИТНАЯ_БУХАНКА.jpg"},
-			{model: "БРОНИРОВАННАЯ БУХАНКА", img: "../images/mark/БУХАНКА/БРОНИРОВАННАЯ_БУХАНКА.jpg"},
-			{model: "БУХАНКА ИЗ БУДУЩЕГО", img: "../images/mark/БУХАНКА/БУХАНКА_ИЗ_БУДУЩЕГО.jpg"},
-			{model: "ГУСЕНИЧНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГУСЕНИЧНАЯ_БУХАНКА.jpg"},
-			{model: "ВОЗДУШНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВОЗДУШНАЯ_БУХАНКА.jpg"},
-			{model: "БУХАНКА - ЛИМУЗИН", img: "../images/mark/БУХАНКА/БУХАНКА_ЛИМУЗИН.jpg"},
+			{model: "КЛАССИЧЕСКАЯ БУХАНКА", img: "../images/mark/БУХАНКА/КЛАССИЧЕСКАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "ГРУЗОВАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГРУЗОВАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "СКОРАЯ БУХАНКА", img: "../images/mark/БУХАНКА/СКОРАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "БУХАНКА ДЖИП", img: "../images/mark/БУХАНКА/БУХАНКА_ДЖИП.jpg", prise:"цена = "},
+			{model: "ВЕЗДЕХОДНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВЕЗДЕХОДНАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "БУХАНКА - МОНСТР ТРАК", img: "../images/mark/БУХАНКА/БУХАНКА_МОНСТР_ТРАК.jpg", prise:"цена = "},
+			{model: "ЭЛИТНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ЭЛИТНАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "БРОНИРОВАННАЯ БУХАНКА", img: "../images/mark/БУХАНКА/БРОНИРОВАННАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "БУХАНКА ИЗ БУДУЩЕГО", img: "../images/mark/БУХАНКА/БУХАНКА_ИЗ_БУДУЩЕГО.jpg", prise:"цена = "},
+			{model: "ГУСЕНИЧНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ГУСЕНИЧНАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "ВОЗДУШНАЯ БУХАНКА", img: "../images/mark/БУХАНКА/ВОЗДУШНАЯ_БУХАНКА.jpg", prise:"цена = "},
+			{model: "БУХАНКА - ЛИМУЗИН", img: "../images/mark/БУХАНКА/БУХАНКА_ЛИМУЗИН.jpg", prise:"цена = "},
 		]
 			
 		
