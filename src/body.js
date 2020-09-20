@@ -1,5 +1,6 @@
 import React from 'react';
 import Table_car from './table_car.js';
+import Car_description from './car_description.js'
 import {
 BrowserRouter as Router,
 Switch,
@@ -104,10 +105,10 @@ class Body extends React.Component {
 				
 				<Switch>
 					<Route path='/mark/bmw'>
-						<Table_car mark="BMWs" cars={car_list_bmw} />
+					<Table_car mark="BMWs" cars={car_list_bmw} />
 					</Route>
 					<Route path='/mark/ford'>
-						<Table_car mark="Ford" cars={car_list_ford} />
+					<Table_car mark="Ford" cars={car_list_ford} />
 					</Route>
 					<Route path='/mark/mercedes'>
 					<Table_car mark="Mercedes" cars={car_list_mercedes} />
@@ -120,6 +121,9 @@ class Body extends React.Component {
 					</Route>
 					<Route path='/mark/БУХАНКА'>
 					<Table_car mark="БУХАНКА" cars={car_list_BUHANKA} />
+					</Route>
+					<Route path='/mark/detail'>
+					<Car_description />
 					</Route>
 				</Switch>
 				  </div>
